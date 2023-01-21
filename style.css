@@ -144,3 +144,10 @@ border: 5px solid wheat
     top: 26.25%;
     left: 4%;
 }
+
+.x {
+    visibility: hidden;
+    height: 15px;
+    width: 50px;
+    margin: 1px;
+}

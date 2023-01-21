@@ -9,9 +9,9 @@ const conditions = true;
 // }
 
 function breakBlock() {
-        if (!(this.classList.contains("X"))){
+        if (!(this.classList.contains("x"))){
             if (conditions === true) {
-                this.setAttribute("class", "X");
+                this.setAttribute("class", "x");
                 winner();
                 conditions = false;
                 return false;
