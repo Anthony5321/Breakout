@@ -3,7 +3,7 @@ const board = document.querySelector('.board')
 
 
 
-function movingBall () {
-    let leftRight = ()
+// function movingBall () {
+//     let leftRight = ()
 
-}
+// }

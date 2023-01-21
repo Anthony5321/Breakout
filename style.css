@@ -68,7 +68,7 @@ section {
 left:25%;
 top:10%;
 padding: 10px;
-height: 800px;
+height: 700px;
 width: 600px;
 background-color: #282828;
 border-width: 30px;
@@ -83,4 +83,64 @@ border: 5px solid wheat
     height: 15px;
     width: 15px;
     background-color: #33ff33;
+}
+
+.block {
+    height: 15px;
+    width: 50px;
+    background-color: white;
+    margin: 1px;
+
+}
+
+.rowOne {
+    position: absolute;
+    top: 6%;
+    left: 4%;
+}
+
+.rowTwo {
+    position: absolute;
+    top: 8.25%;
+    left: 4%;
+}
+.rowThree {
+    position: absolute;
+    top: 10.5%;
+    left: 4%;
+}
+.rowFour {
+    position: absolute;
+    top: 12.75%;
+    left: 4%;
+}
+.rowFive {
+    position: absolute;
+    top: 15%;
+    left: 4%;
+}
+.rowSix {
+    position: absolute;
+    top: 17.25%;
+    left: 4%;
+}
+.rowSeven {
+    position: absolute;
+    top: 19.5%;
+    left: 4%;
+}
+.rowEight {
+    position: absolute;
+    top: 21.75%;
+    left: 4%;
+}
+.rowNine {
+    position: absolute;
+    top: 24%;
+    left: 4%;
+}
+.rowTen {
+    position: absolute;
+    top: 26.25%;
+    left: 4%;
 }
