@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
 body {
     margin: 0;
     height: 100vh;
@@ -57,3 +62,25 @@ section {
   a {
     color: #33ff33;
   }
+
+.board {
+    position: absolute;
+left:25%;
+top:10%;
+padding: 10px;
+height: 800px;
+width: 600px;
+background-color: #282828;
+border-width: 30px;
+border: 5px solid wheat
+}
+
+.ball {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: #33ff33;
+}
