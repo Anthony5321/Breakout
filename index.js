@@ -1,17 +1,47 @@
 const block = document.getElementsByClassName('block')
 const paddle = document.getElementsByClassName('paddle')
 const conditions = true;
-let xDirection = -2
-let yDirection = 2
-
+let rightPressed = false;
+let leftPressed = false;
+let x = -2
+let y = 2
+const paddleWidth = 75
+const paddleHeight = 15
+const boundsHigh = 700
+const boundsWidth = 500
+let timerId
+timerId = setInterval(moveBall, 50)
+const paddleStart = [305, 10]
+let currentPosition = paddleStart
 const ballStart = [305, 40]
-let ballCurrentPosition = ballStart
+let ballPosition = ballStart
 
-function userStart () {
-absolute
-  left
-  bottom 
+document.onkeydown = (e) => {
+  e = e || window.event;
+  if (e.key === 'ArrowLeft') {
+    currentPosition[0] -= 10
+    currentPosition[0] < (boundsWidth - paddleWidth)
+    movePaddle()
+        console.log(currentPosition[0] > 0)
+ 
+    console.log('left arrow pressed')
+  } else if (e.key === 'ArrowRight') {
+    currentPosition[0] += 10
+    console.log(currentPosition[0])
+    movePaddle()
+    console.log('right arrow pressed')
+  }
 }
+// const puddle = document.createElement('div')
+// paddle.classList.add('puddle')
+// board.appendChild(paddle)
+// drawUser()
+
+function movePaddle() {
+  paddle.style.left = currentPosition[0] + 'px'
+  paddle.style.bottom = currentPosition[1] + 'px'
+}
+movePaddle()
 function breakBlock() {
         if (!(this.classList.contains("x"))){
             if (conditions === true) {
@@ -28,9 +58,6 @@ function breakBlock() {
         
       }
 
-function winner () {
-
-}
 
 for (math = 0; math < block.length; math += 1){
     block[math].addEventListener("click", breakBlock)
@@ -38,9 +65,6 @@ for (math = 0; math < block.length; math += 1){
 
 const board = document.querySelector('.board')
 const ballDiameter = 30
-
-let timerId
-let score = 0
 
 //add ball
 const ball = document.createElement('div')
@@ -50,34 +74,55 @@ board.appendChild(ball)
 
 //draw Ball
 function drawBall() {
-  ball.style.left = ballCurrentPosition[0] + 'px'
-  ball.style.bottom = ballCurrentPosition[1] + 'px'
+  ball.style.left = ballPosition[0] + 'px'
+  ball.style.bottom = ballPosition[1] + 'px'
 }
 
 //move ball
 function moveBall() {
-    ballCurrentPosition[0] += xDirection
-    ballCurrentPosition[1] += yDirection
+    ballPosition[0] += x
+    ballPosition[1] += y
     drawBall()
+    collision ()
 
 }
-timerId = setInterval(moveBall, 20)
 
-function changeDirection() {
-  if (xDirection === 2 && yDirection === 2) {
-    yDirection = -2
+function change() {
+  if (x === 2 && y === 2) {
+    y = -2
     return
   }
-  if (xDirection === 2 && yDirection === -2) {
-    xDirection = -2
+  if (x === 2 && y === -2) {
+    x = -2
     return
   }
-  if (xDirection === -2 && yDirection === -2) {
-    yDirection = 2
+  if (x === -2 && y === -2) {
+    y = 2
     return
   }
-  if (xDirection === -2 && yDirection === 2) {
-    xDirection = 2
+  if (x === -2 && y === 2) {
+    x = 2
     return
   }
+}
+
+// wall and paddle interatctions
+function collision () {
+  for (let i = 0; i < block.length; i++){
+    if(ballPosition[0] >= (boundsWidth - ballDiameter) || ballPosition[0] <= 0 || ballPosition[1] >= (boundsHigh - ballDiameter))
+    {
+      change()
+    }
+    if
+    (
+      (ballPosition[0] > currentPosition[0] && ballPosition[0] < currentPosition[0] + paddleWidth) &&
+      (ballPosition[1] > currentPosition[1] && ballPosition[1] < currentPosition[1] + paddleHeight ) 
+    )
+    {
+      change()
+    }
+}
+}
+function winner () {
+
 }
