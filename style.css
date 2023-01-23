@@ -20,9 +20,7 @@ nav {
     justify-content: space-between;
   }
 
-section {
-    display: flex;
-}
+
 
 .links {
     line-height: 2 ;
@@ -63,10 +61,8 @@ section {
     color: #33ff33;
   }
 
-.board {
-    position: absolute;
-left:25%;
-top:10%;
+ .board {
+position: absolute;
 padding: 10px;
 height: 700px;
 width: 600px;
@@ -86,23 +82,27 @@ border: 5px solid wheat
 }
 
 .block {
+    position: absolute;
     height: 15px;
     width: 50px;
     background-color: white;
     margin: 1px;
-
 }
 
-.rowOne {
+.rowOne #bl1 {
     position: absolute;
-    top: 6%;
-    left: 4%;
+    top: 10px;
+    left: 35px;
 }
-
-.rowTwo {
+.rowOne #bl2 {
     position: absolute;
-    top: 8.25%;
-    left: 4%;
+    top: 10px;
+    left: 500px;
+}
+.rowTwo #bl1{
+    position: absolute;
+    top: 30px;
+    left: 350px;
 }
 .rowThree {
     position: absolute;
@@ -159,4 +159,5 @@ border: 5px solid wheat
     height: 15px;
     width: 70px;
     background-color: white;
-}
+} 
+  
