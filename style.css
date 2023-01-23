@@ -77,8 +77,8 @@ border: 5px solid wheat
 
 .ball {
     position: absolute;
-    left: 50%;
-    bottom: 10%;
+    left: 48.75%;
+    bottom: 6%;
     border-radius: 50%;
     height: 15px;
     width: 15px;
@@ -150,4 +150,13 @@ border: 5px solid wheat
     height: 15px;
     width: 50px;
     margin: 1px;
+}
+
+.paddle {
+    position: absolute;
+    left: 45%;
+    bottom: 2%;
+    height: 15px;
+    width: 70px;
+    background-color: white;
 }
