@@ -46,3 +46,4 @@ function playAgain() {
     bl10.setAttribute("class", "");
     conditions = true;
   }
+
