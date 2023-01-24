@@ -1,5 +1,6 @@
 const block = document.getElementsByClassName('block')
 const board = document.querySelector('.board')
+const divs = [...document.querySelectorAll('div')]
 const conditions = true;
 let rightPressed = false;
 let leftPressed = false;
@@ -19,6 +20,7 @@ let currentPosition = paddleStart
 const ballStart = [265, 40]
 let ballPosition = ballStart
 
+// Key input
 document.onkeydown = (e) => {
   e = e || window.event;
   if (e.key === 'ArrowLeft') {
@@ -42,10 +44,7 @@ document.onkeydown = (e) => {
   }
 }
 
-function movePaddle() {
-  paddle.style.left = currentPosition[0] + 'px'
-  paddle.style.bottom = currentPosition[1] + 'px'
-}
+// For tests
 function breakBlock() {
         if (!(this.classList.contains("x"))){
             if (conditions === true) {
@@ -62,16 +61,20 @@ function breakBlock() {
         }
         
       }
-
-
 for (math = 0; math < block.length; math += 1){
     block[math].addEventListener("click", breakBlock)
 }
 
-
+// Add paddle
 const paddle = document.createElement('div')
 paddle.classList.add('paddle')
 board.appendChild(paddle)
+
+// Player moving
+function movePaddle() {
+  paddle.style.left = currentPosition[0] + 'px'
+  paddle.style.bottom = currentPosition[1] + 'px'
+}
 
 //add ball
 const ball = document.createElement('div')
@@ -92,9 +95,12 @@ function moveBall() {
     drawBall()
     collision ()
     lose()
+    // collisionBlock()
 
 }
 
+
+// Reverse Direction
 function change() {
   if (x === 2 && y === 2) {
     y = -2
@@ -130,7 +136,7 @@ function collision () {
       change()
     }
     if
-    ((ballPosition[0] >= currentPosition[0] && ballPosition[0] <blockWidth) &&
+    ((ballPosition[0] >= currentPosition[0] && ballPosition[0] < blockWidth) &&
     (ballPosition[1] > currentPosition[1] && ballPosition[1] < blockHeight ))
     {
       change()
@@ -138,6 +144,7 @@ function collision () {
     }
 }
 }
+// Win conditions
 // function winner() {
 //   if ((bl1.classList.contains("X")) && (bl2.classList.contains("X")) && (bl3.classList.contains("X")) &&
 //              ((bl4.classList.contains("X")) && (bl5.classList.contains("X")) && (bl6.classList.contains("X"))) &&
@@ -147,9 +154,17 @@ function collision () {
 //               }
 // }
 
+// Loss conditions
 function lose() {
   if  (ballPosition[1] === -2) {
 // alert('You lost, try again?')
 location.reload()
   }
 }
+
+// function collisionBlock() {
+// if (currentPosition[0], currentPosition[1] = block) 
+//       {  
+
+//         change()
+//       }}
