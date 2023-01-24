@@ -44,6 +44,11 @@ document.onkeydown = (e) => {
   }
 }
 
+// for testing the blocks
+// const block = document.getElementsByid('bl4')
+
+
+
 // For tests
 function breakBlock() {
         if (!(this.classList.contains("x"))){
@@ -122,7 +127,6 @@ function change() {
 
 // wall and paddle interatctions
 function collision () {
-  for (let math = 0; math < block.length; math+= 1){
     if(ballPosition[0] >= (boundsWidth - ballDiameter) || ballPosition[0] <= 0 || ballPosition[1] >= (boundsHeight - ballDiameter))
     {
       change()
@@ -135,15 +139,44 @@ function collision () {
     {
       change()
     }
+    // Work around for the ball not hitting correctly
     if
-    ((ballPosition[0] >= currentPosition[0] && ballPosition[0] < blockWidth) &&
-    (ballPosition[1] > currentPosition[1] && ballPosition[1] < blockHeight ))
+    ((ballPosition[1] > 590 && ballPosition[0] >= blockWidth))
     {
+    let rowOne = document.querySelector('.rowOne')
+    rowOne.removeChild(rowOne.children[0])
+    change()
+    }
+    if
+    ((ballPosition[1] > 570 && ballPosition[0] >= blockWidth))
+    {
+    let rowTwo = document.querySelector('.rowTwo')
+    rowTwo.removeChild(rowTwo.children[0])
+    change()
+    }
+    if
+    ((ballPosition[1] > 550 && ballPosition[0] >= blockWidth))
+    {
+    let rowThree = document.querySelector('.rowThree')
+    rowThree.removeChild(rowThree.children[0])
+    change()
+    }
+    if
+      ((ballPosition[1] > 530 && ballPosition[0] >= blockWidth))
+    {
+      let rowFour = document.querySelector('.rowFour')
+    rowFour.removeChild(rowFour.children[0])
       change()
-      // block.remove()
+    }
+    if
+    ((ballPosition[1] > 510 && ballPosition[0] >= blockWidth))
+    {
+    let rowFive = document.querySelector('.rowFive')
+    rowFive.removeChild(rowFive.children[0])
+    change()
     }
 }
-}
+
 // Win conditions
 // function winner() {
 //   if ((bl1.classList.contains("X")) && (bl2.classList.contains("X")) && (bl3.classList.contains("X")) &&
@@ -168,3 +201,4 @@ location.reload()
 
 //         change()
 //       }}
+

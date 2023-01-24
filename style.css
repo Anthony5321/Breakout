@@ -22,7 +22,8 @@ nav {
 
 
 
-.links {
+  .links {
+   
     line-height: 2 ;
     font-size: 20px;
     margin: 20px;
@@ -327,7 +328,7 @@ border: 5px solid wheat
     bottom: 10px;
     height: 15px;
     width: 70px;
-    background-color: white;
+    background-color: #33ff33;
     border-radius: 40%;
 } 
   
