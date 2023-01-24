@@ -1,16 +1,17 @@
 const block = document.getElementsByClassName('block')
-const paddle = document.getElementsByClassName('paddle')
+const board = document.querySelector('.board')
 const conditions = true;
 let rightPressed = false;
 let leftPressed = false;
-let x = -2
-let y = 2
+let x = 2
+let y = -2
 const paddleWidth = 75
 const paddleHeight = 15
 const boundsHigh = 700
 const boundsWidth = 500
+const ballDiameter = 15
 let timerId
-timerId = setInterval(moveBall, 50)
+timerId = setInterval(moveBall, 0)
 const paddleStart = [305, 10]
 let currentPosition = paddleStart
 const ballStart = [305, 40]
@@ -32,16 +33,11 @@ document.onkeydown = (e) => {
     console.log('right arrow pressed')
   }
 }
-// const puddle = document.createElement('div')
-// paddle.classList.add('puddle')
-// board.appendChild(paddle)
-// drawUser()
 
 function movePaddle() {
   paddle.style.left = currentPosition[0] + 'px'
   paddle.style.bottom = currentPosition[1] + 'px'
 }
-movePaddle()
 function breakBlock() {
         if (!(this.classList.contains("x"))){
             if (conditions === true) {
@@ -63,8 +59,10 @@ for (math = 0; math < block.length; math += 1){
     block[math].addEventListener("click", breakBlock)
 }
 
-const board = document.querySelector('.board')
-const ballDiameter = 30
+
+const paddle = document.createElement('div')
+paddle.classList.add('paddle')
+board.appendChild(paddle)
 
 //add ball
 const ball = document.createElement('div')
@@ -76,6 +74,7 @@ board.appendChild(ball)
 function drawBall() {
   ball.style.left = ballPosition[0] + 'px'
   ball.style.bottom = ballPosition[1] + 'px'
+
 }
 
 //move ball
@@ -108,7 +107,7 @@ function change() {
 
 // wall and paddle interatctions
 function collision () {
-  for (let i = 0; i < block.length; i++){
+  for (let math = 0; math < block.length; math++){
     if(ballPosition[0] >= (boundsWidth - ballDiameter) || ballPosition[0] <= 0 || ballPosition[1] >= (boundsHigh - ballDiameter))
     {
       change()
