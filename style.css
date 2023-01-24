@@ -25,7 +25,7 @@ nav {
 .links {
     line-height: 2 ;
     font-size: 20px;
-    margin: 10px;
+    margin: 20px;
     color: #33ff33;
     font-family: 'Press Start 2P', cursive;
     text-transform: uppercase;
@@ -63,18 +63,18 @@ nav {
 
  .board {
 position: absolute;
-padding: 10px;
+padding: 20px;
 height: 600px;
 width: 500px;
 background-color: #282828;
-border-width: 30px;
+border-width: 31px;
 border: 5px solid wheat
 }
 
 .ball {
     position: absolute;
-    left: 48.75%;
-    bottom: 6%;
+    left: 265px;
+    bottom: 35px;
     border-radius: 50%;
     height: 15px;
     width: 15px;
@@ -91,125 +91,229 @@ border: 5px solid wheat
 
  .rowOne #bl1 {
     position: absolute;
-    top: 10px;
-    left: 35px;
+    top: 20px;
+    left: 25px;
 }
 .rowOne #bl2 {
     position: absolute;
-    top: 10px;
-    left: 500px;
+    top: 20px;
+    left: 80px;
 }
 .rowOne #bl3 {
     position: absolute;
-    top: 10px;
-    left: 500px;
+    top: 20px;
+    left: 135px;
 }
 .rowOne #bl4 {
     position: absolute;
-    top: 10px;
-    left: 500px;
+    top: 20px;
+    left: 190px;
 }
 .rowOne #bl5 {
     position: absolute;
-    top: 10px;
-    left: 500px;
+    top: 20px;
+    left: 245px;
 }
 .rowOne #bl6 {
     position: absolute;
-    top: 10px;
-    left: 500px;
+    top: 20px;
+    left: 300px;
 }
 .rowOne #bl7 {
     position: absolute;
-    top: 10px;
-    left: 500px;
+    top: 20px;
+    left: 355px;
 }
 .rowOne #bl8 {
     position: absolute;
-    top: 10px;
-    left: 500px;
+    top: 20px;
+    left: 410px;
+}
+.rowOne #bl9 {
+    position: absolute;
+    top: 20px;
+    left: 465px;
 }
 .rowTwo #bl1{
     position: absolute;
-    top: 30px;
-    left: 350px;
+    top: 40px;
+    left: 25px;
 }
 .rowTwo #bl2{
     position: absolute;
-    top: 30px;
-    left: 350px;
+    top: 40px;
+    left: 80px;
 }
 .rowTwo #bl3{
     position: absolute;
-    top: 30px;
-    left: 350px;
+    top: 40px;
+    left: 135px;
 }
 .rowTwo #bl4{
     position: absolute;
-    top: 30px;
-    left: 350px;
+    top: 40px;
+    left: 190px;
 }
 .rowTwo #bl5{
     position: absolute;
-    top: 30px;
-    left: 350px;
+    top: 40px;
+    left: 245px;
 }
 .rowTwo #bl6{
     position: absolute;
-    top: 30px;
-    left: 350px;
+    top: 40px;
+    left: 300px;
 }
 .rowTwo #bl7{
     position: absolute;
-    top: 30px;
-    left: 350px;
+    top: 40px;
+    left: 355px;
 }
 .rowTwo #bl8{
     position: absolute;
-    top: 30px;
-    left: 350px;
+    top: 40px;
+    left: 410px;
 }
-.rowThree {
+.rowTwo #bl9{
     position: absolute;
-    top: 10.5%;
-    left: 4%;
+    top: 40px;
+    left: 465px;
 }
-.rowFour {
+.rowThree #bl1{
     position: absolute;
-    top: 12.75%;
-    left: 4%;
+    top: 60px;
+    left: 25px;
 }
-.rowFive {
+.rowThree #bl2{
     position: absolute;
-    top: 15%;
-    left: 4%;
+    top: 60px;
+    left: 80px;
 }
-.rowSix {
+.rowThree #bl3{
     position: absolute;
-    top: 17.25%;
-    left: 4%;
+    top: 60px;
+    left: 135px;
 }
-.rowSeven {
+.rowThree #bl4{
     position: absolute;
-    top: 19.5%;
-    left: 4%;
+    top: 60px;
+    left: 190px;
 }
-.rowEight {
+.rowThree #bl5{
     position: absolute;
-    top: 21.75%;
-    left: 4%;
+    top: 60px;
+    left: 245px;
 }
-.rowNine {
+.rowThree #bl6{
     position: absolute;
-    top: 24%;
-    left: 4%;
+    top: 60px;
+    left: 300px;
 }
-.rowTen {
+.rowThree #bl7{
     position: absolute;
-    top: 26.25%;
-    left: 4%;
+    top: 60px;
+    left: 355px;
 }
-
+.rowThree #bl8{
+    position: absolute;
+    top: 60px;
+    left: 410px;
+}
+.rowThree #bl9{
+    position: absolute;
+    top: 60px;
+    left: 465px;
+}
+.rowFour #bl1{
+    position: absolute;
+    top: 80px;
+    left: 25px;
+}
+.rowFour #bl2{
+    position: absolute;
+    top: 80px;
+    left: 80px;
+}
+.rowFour #bl3{
+    position: absolute;
+    top: 80px;
+    left: 135px;
+}
+.rowFour #bl4{
+    position: absolute;
+    top: 80px;
+    left: 190px;
+}
+.rowFour #bl5{
+    position: absolute;
+    top: 80px;
+    left: 245px;
+}
+.rowFour #bl6{
+    position: absolute;
+    top: 80px;
+    left: 300px;
+}
+.rowFour #bl7{
+    position: absolute;
+    top: 80px;
+    left: 355px;
+}
+.rowFour #bl8{
+    position: absolute;
+    top: 80px;
+    left: 410px;
+}
+.rowFour #bl9{
+    position: absolute;
+    top: 80px;
+    left: 465px;
+}
+.rowFive #bl1{
+    position: absolute;
+    top: 100px;
+    left: 25px;
+}
+.rowFive #bl2{
+    position: absolute;
+    top: 100px;
+    left: 80px;
+}
+.rowFive #bl3{
+    position: absolute;
+    top: 100px;
+    left: 135px;
+}
+.rowFive #bl4{
+    position: absolute;
+    top: 100px;
+    left: 190px;
+}
+.rowFive #bl5{
+    position: absolute;
+    top: 100px;
+    left: 245px;
+}
+.rowFive #bl6{
+    position: absolute;
+    top: 100px;
+    left: 300px;
+}
+.rowFive #bl7{
+    position: absolute;
+    top: 100px;
+    left: 355px;
+}
+.rowFive #bl8{
+    position: absolute;
+    top: 100px;
+    left: 410px;
+}
+.rowFive #bl9{
+    position: absolute;
+    top: 100px;
+    left: 465px;
+}
 .x {
     visibility: hidden;
     height: 15px;
@@ -219,7 +323,7 @@ border: 5px solid wheat
 
 .paddle {
     position: absolute;
-    left: 45%;
+    left: 240px;
     bottom: 10px;
     height: 15px;
     width: 70px;

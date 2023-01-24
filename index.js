@@ -7,14 +7,16 @@ let x = 2
 let y = -2
 const paddleWidth = 75
 const paddleHeight = 15
-const boundsHigh = 620
-const boundsWidth = 520
+const boundsHeight = 640
+const boundsWidth = 540
 const ballDiameter = 15
+const blockHeight = 15
+const blockWidth = 50
 let timerId
 timerId = setInterval(moveBall, 100000)
-const paddleStart = [225, 10]
+const paddleStart = [235, 10]
 let currentPosition = paddleStart
-const ballStart = [255, 40]
+const ballStart = [265, 40]
 let ballPosition = ballStart
 
 document.onkeydown = (e) => {
@@ -32,7 +34,7 @@ document.onkeydown = (e) => {
   } else if (e.key === 'ArrowRight') {
     currentPosition[0] += 10
     console.log(currentPosition[0])
-    if (currentPosition[0] >= 455) {
+    if (currentPosition[0] >= 475) {
       currentPosition[0] -= 10
     }
     movePaddle()
@@ -48,7 +50,8 @@ function breakBlock() {
         if (!(this.classList.contains("x"))){
             if (conditions === true) {
                 this.setAttribute("class", "x");
-                winner();
+                // winner();
+                // conditions = false;
                 return false;
       
           }
@@ -88,6 +91,7 @@ function moveBall() {
     ballPosition[1] += y
     drawBall()
     collision ()
+    lose()
 
 }
 
@@ -113,7 +117,7 @@ function change() {
 // wall and paddle interatctions
 function collision () {
   for (let math = 0; math < block.length; math+= 1){
-    if(ballPosition[0] >= (boundsWidth - ballDiameter) || ballPosition[0] <= 0 || ballPosition[1] >= (boundsHigh - ballDiameter))
+    if(ballPosition[0] >= (boundsWidth - ballDiameter) || ballPosition[0] <= 0 || ballPosition[1] >= (boundsHeight - ballDiameter))
     {
       change()
     }
@@ -125,8 +129,27 @@ function collision () {
     {
       change()
     }
+    if
+    ((ballPosition[0] >= currentPosition[0] && ballPosition[0] <blockWidth) &&
+    (ballPosition[1] > currentPosition[1] && ballPosition[1] < blockHeight ))
+    {
+      change()
+      // block.remove()
+    }
 }
 }
-function winner () {
+// function winner() {
+//   if ((bl1.classList.contains("X")) && (bl2.classList.contains("X")) && (bl3.classList.contains("X")) &&
+//              ((bl4.classList.contains("X")) && (bl5.classList.contains("X")) && (bl6.classList.contains("X"))) &&
+//              ((bl7.classList.contains("X")) && (bl8.classList.contains("X")) && (bl9.classList.contains("X"))))
+//              {
+//       alert("You win, YAY");
+//               }
+// }
 
+function lose() {
+  if  (ballPosition[1] === -2) {
+// alert('You lost, try again?')
+location.reload()
+  }
 }
