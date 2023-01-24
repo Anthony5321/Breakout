@@ -64,8 +64,8 @@ nav {
  .board {
 position: absolute;
 padding: 10px;
-height: 700px;
-width: 600px;
+height: 600px;
+width: 500px;
 background-color: #282828;
 border-width: 30px;
 border: 5px solid wheat
@@ -81,15 +81,15 @@ border: 5px solid wheat
     background-color: #33ff33;
 }
 
-/* .block {
+.block {
     position: absolute;
     height: 15px;
     width: 50px;
     background-color: white;
     margin: 1px;
-} */
+}
 
-/* .rowOne #bl1 {
+ .rowOne #bl1 {
     position: absolute;
     top: 10px;
     left: 35px;
@@ -99,7 +99,72 @@ border: 5px solid wheat
     top: 10px;
     left: 500px;
 }
+.rowOne #bl3 {
+    position: absolute;
+    top: 10px;
+    left: 500px;
+}
+.rowOne #bl4 {
+    position: absolute;
+    top: 10px;
+    left: 500px;
+}
+.rowOne #bl5 {
+    position: absolute;
+    top: 10px;
+    left: 500px;
+}
+.rowOne #bl6 {
+    position: absolute;
+    top: 10px;
+    left: 500px;
+}
+.rowOne #bl7 {
+    position: absolute;
+    top: 10px;
+    left: 500px;
+}
+.rowOne #bl8 {
+    position: absolute;
+    top: 10px;
+    left: 500px;
+}
 .rowTwo #bl1{
+    position: absolute;
+    top: 30px;
+    left: 350px;
+}
+.rowTwo #bl2{
+    position: absolute;
+    top: 30px;
+    left: 350px;
+}
+.rowTwo #bl3{
+    position: absolute;
+    top: 30px;
+    left: 350px;
+}
+.rowTwo #bl4{
+    position: absolute;
+    top: 30px;
+    left: 350px;
+}
+.rowTwo #bl5{
+    position: absolute;
+    top: 30px;
+    left: 350px;
+}
+.rowTwo #bl6{
+    position: absolute;
+    top: 30px;
+    left: 350px;
+}
+.rowTwo #bl7{
+    position: absolute;
+    top: 30px;
+    left: 350px;
+}
+.rowTwo #bl8{
     position: absolute;
     top: 30px;
     left: 350px;
@@ -143,7 +208,7 @@ border: 5px solid wheat
     position: absolute;
     top: 26.25%;
     left: 4%;
-} */
+}
 
 .x {
     visibility: hidden;

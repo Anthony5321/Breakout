@@ -7,21 +7,24 @@ let x = 2
 let y = -2
 const paddleWidth = 75
 const paddleHeight = 15
-const boundsHigh = 700
-const boundsWidth = 500
+const boundsHigh = 620
+const boundsWidth = 520
 const ballDiameter = 15
 let timerId
-timerId = setInterval(moveBall, 0)
-const paddleStart = [305, 10]
+timerId = setInterval(moveBall, 100000)
+const paddleStart = [225, 10]
 let currentPosition = paddleStart
-const ballStart = [305, 40]
+const ballStart = [255, 40]
 let ballPosition = ballStart
 
 document.onkeydown = (e) => {
   e = e || window.event;
   if (e.key === 'ArrowLeft') {
     currentPosition[0] -= 10
-    currentPosition[0] < (boundsWidth - paddleWidth)
+    console.log(currentPosition[0])
+   if (currentPosition[0] <= 0) {
+    currentPosition[0] += 10
+   }
     movePaddle()
         console.log(currentPosition[0] > 0)
  
@@ -29,6 +32,9 @@ document.onkeydown = (e) => {
   } else if (e.key === 'ArrowRight') {
     currentPosition[0] += 10
     console.log(currentPosition[0])
+    if (currentPosition[0] >= 455) {
+      currentPosition[0] -= 10
+    }
     movePaddle()
     console.log('right arrow pressed')
   }
@@ -74,7 +80,6 @@ board.appendChild(ball)
 function drawBall() {
   ball.style.left = ballPosition[0] + 'px'
   ball.style.bottom = ballPosition[1] + 'px'
-
 }
 
 //move ball
@@ -107,7 +112,7 @@ function change() {
 
 // wall and paddle interatctions
 function collision () {
-  for (let math = 0; math < block.length; math++){
+  for (let math = 0; math < block.length; math+= 1){
     if(ballPosition[0] >= (boundsWidth - ballDiameter) || ballPosition[0] <= 0 || ballPosition[1] >= (boundsHigh - ballDiameter))
     {
       change()
