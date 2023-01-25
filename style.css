@@ -89,228 +89,245 @@ border: 5px solid wheat
     background-color: white;
     margin: 1px;
 }
+.rowOne > .block {
+    background-color: #ff0000;
+}
 
- .rowOne #bl1-1 {
+.rowTwo > .block {
+    background-color: #ffa500;
+}
+
+.rowThree > .block {
+    background-color: #ffff00;
+}
+.rowFour > .block {
+    background-color: #008000;
+}
+.rowFive > .block {
+    background-color: #0000ff;
+}
+
+#bl1-1 {
     position: absolute;
     bottom: 600px;
     left: 25px;
 }
-.rowOne #bl1-2 {
+#bl1-2 {
     position: absolute;
     bottom: 600px;
     left: 80px;
 }
-.rowOne #bl1-3 {
+#bl1-3 {
     position: absolute;
     bottom: 600px;
     left: 135px;
 }
-.rowOne #bl1-4 {
+#bl1-4 {
     position: absolute;
     bottom: 600px;
     left: 190px;
 }
-.rowOne #bl1-5 {
+#bl1-5 {
     position: absolute;
     bottom: 600px;
     left: 245px;
 }
-.rowOne #bl1-6 {
+#bl1-6 {
     position: absolute;
     bottom: 600px;
     left: 300px;
 }
-.rowOne #bl1-7 {
+#bl1-7 {
     position: absolute;
     bottom: 600px;
     left: 355px;
 }
-.rowOne #bl1-8 {
+#bl1-8 {
     position: absolute;
     bottom: 600px;
     left: 410px;
 }
-.rowOne #bl1-9 {
+#bl1-9 {
     position: absolute;
     bottom: 600px;
     left: 465px;
 }
-.rowTwo #bl2-1{
+#bl2-1{
     position: absolute;
     bottom: 580px;
     left: 25px;
 }
-.rowTwo #bl2-2{
+#bl2-2{
     position: absolute;
     bottom: 580px;
     left: 80px;
 }
-.rowTwo #bl2-3{
+#bl2-3{
     position: absolute;
     bottom: 580px;
     left: 135px;
 }
-.rowTwo #bl2-4{
+#bl2-4{
     position: absolute;
     bottom: 580px;
     left: 190px;
 }
-.rowTwo #bl2-5{
+#bl2-5{
     position: absolute;
      bottom: 580px;
     left: 245px;
 }
-.rowTwo #bl2-6{
+#bl2-6{
     position: absolute;
      bottom: 580px;
     left: 300px;
 }
-.rowTwo #bl2-7{
+#bl2-7{
     position: absolute;
      bottom: 580px;
     left: 355px;
 }
-.rowTwo #bl2-8{
+#bl2-8{
     position: absolute;
      bottom: 580px;
     left: 410px;
 }
-.rowTwo #bl2-9{
+#bl2-9{
     position: absolute;
      bottom: 580px;
     left: 465px;
 }
-.rowThree #bl3-1{
+#bl3-1{
     position: absolute;
     bottom: 560px;
     left: 25px;
 }
-.rowThree #bl3-2{
+#bl3-2{
     position: absolute;
      bottom: 560px;
     left: 80px;
 }
-.rowThree #bl3-3{
+#bl3-3{
     position: absolute;
      bottom: 560px;
     left: 135px;
 }
-.rowThree #bl3-4{
+#bl3-4{
     position: absolute;
      bottom: 560px;
     left: 190px;
 }
-.rowThree #bl3-5{
+#bl3-5{
     position: absolute;
      bottom: 560px;
     left: 245px;
 }
-.rowThree #bl3-6{
+#bl3-6{
     position: absolute;
      bottom: 560px;
     left: 300px;
 }
-.rowThree #bl3-7{
+#bl3-7{
     position: absolute;
      bottom: 560px;
     left: 355px;
 }
-.rowThree #bl3-8{
+#bl3-8{
     position: absolute;
      bottom: 560px;
     left: 410px;
 }
-.rowThree #bl3-9{
+#bl3-9{
     position: absolute;
      bottom: 560px;
     left: 465px;
 }
-.rowFour #bl4-1{
+#bl4-1{
     position: absolute;
     bottom: 540px;
     left: 25px;
 }
-.rowFour #bl4-2{
+#bl4-2{
     position: absolute;
     bottom: 540px;
     left: 80px;
 }
-.rowFour #bl4-3{
+#bl4-3{
     position: absolute;
     bottom: 540px;
     left: 135px;
 }
-.rowFour #bl4-4{
+#bl4-4{
     position: absolute;
     bottom: 540px;
     left: 190px;
 }
-.rowFour #bl4-5{
+#bl4-5{
     position: absolute;
     bottom: 540px;
     left: 245px;
 }
-.rowFour #bl4-6{
+#bl4-6{
     position: absolute;
     bottom: 540px;
     left: 300px;
 }
-.rowFour #bl4-7{
+#bl4-7{
     position: absolute;
     bottom: 540px;
     left: 355px;
 }
-.rowFour #bl4-8{
+#bl4-8{
     position: absolute;
     bottom: 540px;
     left: 410px;
 }
-.rowFour #bl4-9{
+#bl4-9{
     position: absolute;
     bottom: 540px;
     left: 465px;
 }
-.rowFive #bl5-1{
+#bl5-1{
     position: absolute;
     bottom: 520px;
     left: 25px;
 }
-.rowFive #bl5-2{
+#bl5-2{
     position: absolute;
     bottom: 520px;
     left: 80px;
 }
-.rowFive #bl5-3{
+#bl5-3{
     position: absolute;
     bottom: 520px;
     left: 135px;
 }
-.rowFive #bl5-4{
+#bl5-4{
     position: absolute;
     bottom: 520px;
     left: 190px;
 }
-.rowFive #bl5-5{
+#bl5-5{
     position: absolute;
     bottom: 520px;
     left: 245px;
 }
-.rowFive #bl5-6{
+#bl5-6{
     position: absolute;
     bottom: 520px;
     left: 300px;
 }
-.rowFive #bl5-7{
+#bl5-7{
     position: absolute;
     bottom: 520px;
     left: 355px;
 }
-.rowFive #bl5-8{
+#bl5-8{
     position: absolute;
     bottom: 520px;
     left: 410px;
 }
-.rowFive #bl5-9{
+#bl5-9{
     position: absolute;
     bottom: 520px;
     left: 465px;
