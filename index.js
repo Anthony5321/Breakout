@@ -14,11 +14,13 @@ const ballDiameter = 15
 const blockHeight = 15
 const blockWidth = 50
 let timerId
-timerId = setInterval(moveBall, 10)
+timerId = setInterval(moveBall, 100000)
 const paddleStart = [235, 10]
 let currentPosition = paddleStart
 const ballStart = [265, 40]
 let ballPosition = ballStart
+const rowOne = document.querySelector('.rowOne')
+
 
 // Key input
 document.onkeydown = (e) => {
@@ -46,21 +48,11 @@ document.onkeydown = (e) => {
 
 // For tests
 function breakBlock() {
-        if (!(this.classList.contains("x"))){
-            if (conditions === true) {
-                this.setAttribute("class", "x");
-                // winner();
-                // conditions = false;
-                return false;
-      
+        if (!(this.classList.contains(""))){
+                this.remove("class");
+                winner();
+            }
           }
-            if (conditions === false) {
-                this.setAttribute("class", "");
-                conditions = true;
-          }
-        }
-        
-      }
 for (math = 0; math < block.length; math += 1){
     block[math].addEventListener("click", breakBlock)
 }
@@ -246,6 +238,7 @@ function collision () {
     )
     {
       bl11.remove()
+      winner()
     change()
     }
     if
@@ -254,6 +247,7 @@ function collision () {
     )
     {
       bl12.remove()
+      winner()
     change()
     }
     if
@@ -262,6 +256,7 @@ function collision () {
     )
     {
       bl13.remove()
+      winner()
     change()
     }
     if
@@ -270,6 +265,7 @@ function collision () {
     )
     {
       bl14.remove()
+      winner()
     change()
     }
     if
@@ -278,6 +274,7 @@ function collision () {
     )
     {
       bl15.remove()
+      winner()
     change()
     }
     if
@@ -286,6 +283,7 @@ function collision () {
     )
     {
       bl16.remove()
+      winner()
     change()
     }
     if
@@ -294,6 +292,7 @@ function collision () {
     )
     {
       bl17.remove()
+      winner()
     change()
     }
     if
@@ -302,6 +301,7 @@ function collision () {
     )
     {
       bl18.remove()
+      winner()
     change()
     }
     if
@@ -310,6 +310,7 @@ function collision () {
     )
     {
       bl19.remove()
+      winner()
     change()
     }
     if
@@ -318,6 +319,7 @@ function collision () {
     )
     {
       bl21.remove()
+      winner()
     change()
     }
     if
@@ -326,6 +328,7 @@ function collision () {
     )
     {
       bl22.remove()
+      winner()
     change()
     }
     if
@@ -334,6 +337,7 @@ function collision () {
     )
     {
       bl23.remove()
+      winner()
     change()
     }
     if
@@ -342,6 +346,7 @@ function collision () {
     )
     {
       bl24.remove()
+      winner()
     change()
     }
     if
@@ -350,6 +355,7 @@ function collision () {
     )
     {
       bl25.remove()
+      winner()
     change()
     }
     if
@@ -358,6 +364,7 @@ function collision () {
     )
     {
       bl26.remove()
+      winner()
     change()
     }
     if
@@ -366,6 +373,7 @@ function collision () {
     )
     {
       bl27.remove()
+      winner()
     change()
     }
     if
@@ -374,6 +382,7 @@ function collision () {
     )
     {
       bl28.remove()
+      winner()
     change()
     }
     if
@@ -382,6 +391,7 @@ function collision () {
     )
     {
       bl29.remove()
+      winner()
     change()
     }
     if
@@ -390,6 +400,7 @@ function collision () {
     )
     {
       bl31.remove()
+      winner()
     change()
     }
     if
@@ -398,6 +409,7 @@ function collision () {
     )
     {
       bl32.remove()
+      winner()
     change()
     }
     if
@@ -406,6 +418,7 @@ function collision () {
     )
     {
       bl33.remove()
+      winner()
     change()
     }
     if
@@ -414,6 +427,7 @@ function collision () {
     )
     {
       bl34.remove()
+      winner()
     change()
     }
     if
@@ -422,6 +436,7 @@ function collision () {
     )
     {
       bl35.remove()
+      winner()
     change()
     }
     if
@@ -430,6 +445,7 @@ function collision () {
     )
     {
       bl36.remove()
+      winner()
     change()
     }
     if
@@ -438,6 +454,7 @@ function collision () {
     )
     {
       bl37.remove()
+      winner()
     change()
     }
     if
@@ -446,6 +463,7 @@ function collision () {
     )
     {
       bl38.remove()
+      winner()
     change()
     }
     if
@@ -454,6 +472,7 @@ function collision () {
     )
     {
       bl39.remove()
+      winner()
     change()
     }
     if
@@ -462,6 +481,7 @@ function collision () {
     )
     {
       bl41.remove()
+      winner()
     change()
     }
     if
@@ -470,6 +490,7 @@ function collision () {
     )
     {
       bl42.remove()
+      winner()
     change()
     }
     if
@@ -478,6 +499,7 @@ function collision () {
     )
     {
       bl43.remove()
+      winner()
     change()
     }
     if
@@ -486,6 +508,7 @@ function collision () {
     )
     {
       bl44.remove()
+      winner()
     change()
     }
     if
@@ -494,6 +517,7 @@ function collision () {
     )
     {
       bl45.remove()
+      winner()
     change()
     }
     if
@@ -502,6 +526,7 @@ function collision () {
     )
     {
       bl46.remove()
+      winner()
     change()
     }
     if
@@ -510,6 +535,7 @@ function collision () {
     )
     {
       bl47.remove()
+      winner()
     change()
     }
     if
@@ -518,6 +544,7 @@ function collision () {
     )
     {
       bl48.remove()
+      winner()
     change()
     }
     if
@@ -526,6 +553,7 @@ function collision () {
     )
     {
       bl49.remove()
+      winner()
     change()
     }
     if
@@ -534,6 +562,7 @@ function collision () {
     )
     {
       bl51.remove()
+      winner()
     change()
     }
     if
@@ -542,6 +571,7 @@ function collision () {
     )
     {
       bl52.remove()
+      winner()
     change()
     }
     if
@@ -550,6 +580,7 @@ function collision () {
     )
     {
       bl53.remove()
+      winner()
     change()
     }
     if
@@ -558,6 +589,7 @@ function collision () {
     )
     {
       bl54.remove()
+      winner()
     change()
     }
     if
@@ -566,6 +598,7 @@ function collision () {
     )
     {
       bl55.remove()
+      winner()
     change()
     }
     if
@@ -574,6 +607,7 @@ function collision () {
     )
     {
       bl56.remove()
+      winner()
     change()
     }
     if
@@ -582,6 +616,7 @@ function collision () {
     )
     {
       bl57.remove()
+      winner()
     change()
     }
     if
@@ -590,6 +625,7 @@ function collision () {
     )
     {
       bl58.remove()
+      winner()
     change()
     }
     if
@@ -598,24 +634,30 @@ function collision () {
     )
     {
       bl59.remove()
+      winner()
     change()
     }
 }
 
 // Win conditions
-// function winner() {
-//   if ((bl1.classList.contains("X")) && (bl2.classList.contains("X")) && (bl3.classList.contains("X")) &&
-//              ((bl4.classList.contains("X")) && (bl5.classList.contains("X")) && (bl6.classList.contains("X"))) &&
-//              ((bl7.classList.contains("X")) && (bl8.classList.contains("X")) && (bl9.classList.contains("X"))))
-//              {
-//       alert("You win, YAY");
-//               }
-// }
+function winner() {
+  if (
+    (document.querySelector('.rowOne').children.length === 0) && 
+  (document.querySelector('.rowTwo').children.length === 0) &&
+  (document.querySelector('.rowThree').children.length === 0) &&
+  (document.querySelector('.rowFour').children.length === 0) &&
+  (document.querySelector('.rowFive').children.length === 0)
+  )
+             {
+      alert("You win, YAY");
+      location.reload()
+              }
+}
 
 // Loss conditions
 function lose() {
   if  (ballPosition[1] < -2) {
-// alert('You lost, try again?')
+alert('You lost, try again?')
 location.reload()
   }
 }
