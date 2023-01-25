@@ -372,8 +372,7 @@ function collision () {
   if
     (checkCollision(ball, bl59))
     {bl59.remove(), winner(), change()}
-  
-    if
+  if
     (checkCollision(ball, bl61))
     {bl61.remove(), winner(), change()}
   if
@@ -400,8 +399,7 @@ function collision () {
   if
     (checkCollision(ball, bl69))
     {bl69.remove(), winner(), change()}
-
-    if
+  if
     (checkCollision(ball, bl71))
     {bl71.remove(), winner(), change()}
   if

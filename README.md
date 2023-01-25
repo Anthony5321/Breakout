@@ -20,34 +20,34 @@
 
 ### ***Getting Started***
 
-##### Other things I have leaned along the way
+##### Things I learned along the way is that a moving object is one of the most annoying things to do.
 ##### A Trello board was used to keep track of development progress and can be viewed [here](https://trello.com/b/o2MMb8xa/project-1).
-##### The project itself was deployed and can be viewed [here](URL).
+##### The project itself was deployed and can be viewed [here](aggressive-powder.surge.sh).
 ***
 
 ### ***Screenshots***
 
-##### image header 1
-![why me](https://pas.service2client.com/assets/contentimages/2020_08/tip.jpg)
-##### image header 2
-![I'm learning](https://www.zdnet.com/a/img/resize/459a0ab08730871cd9ebe8f9a13f6569103ba4f6/2022/08/17/ed15e891-93dd-4cfe-bb63-1c596e025d6d/sharing.jpg?auto=webp&width=1280)
+##### In progress
+![First pic](https://imgur.com/1XVU4UD)
+##### Finished progress
+![I learned](https://www.zdnet.com/a/img/resize/459a0ab08730871cd9ebe8f9a13f6569103ba4f6/2022/08/17/ed15e891-93dd-4cfe-bb63-1c596e025d6d/sharing.jpg?auto=webp&width=1280)
 ***
 
 ### ***Future Updates***
 
-- [ ] Future Update 1
-- [ ] Future Update 2
-- [x] Completed Update
-- [x] ~~Strikethrough~~ Items Also
+- [ ] Add lives
+- [ ] block roll down
+- [ ] Let the paddle grow with some blocks
+- [ ] slow time down with blocks
 ***
 
 ### ***Credits***
 
-##### why me: [google search](https://www.mwccpa.com/help-for-people-struggling-to-pay-bills/)
+##### Many google searches and little helpful tips from users of stack overflow.
 
-##### I'm learning: [google scearch](https://www.zdnet.com/article/the-pc-is-struggling-again-but-the-end-of-windows-10-will-give-it-a-boost/)
+##### To all my helpful teachers and friends.
 
 ##### Markdown Guide: [ia.net](https://ia.net/writer/support/general/markdown-guide)
 
-##### Markdown Cheatsheet: [GitHub](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
 ***

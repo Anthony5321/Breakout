@@ -50,6 +50,13 @@ nav {
 a {
     color: #33ff33;
 }
+.game {
+    background-color: #1d1c1c;
+}
+.home {
+    position: absolute;
+    top: 10%;
+}
 .board {
 position: absolute;
 padding: 20px;
@@ -57,7 +64,7 @@ height: 600px;
 width: 500px;
 background-color: #282828;
 border-width: 31px;
-border: 5px solid wheat
+border: 5px solid #33ff33;
 }
 .ball {
     position: absolute;
