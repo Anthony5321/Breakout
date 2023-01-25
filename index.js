@@ -19,7 +19,7 @@ let y = -2
 let ballPosition = ballStart
 let currentPosition = paddleStart
 let timerId
-timerId = setInterval(moveBall, 100)
+timerId = setInterval(moveBall, 10)
 
 // Key input
 document.onkeydown = (e) => {
@@ -182,6 +182,42 @@ let bl58 = document.getElementById('bl5-8')
 bl58.getBoundingClientRect();
 let bl59 = document.getElementById('bl5-9')
 bl59.getBoundingClientRect();
+let bl61 = document.getElementById('bl6-1')
+bl61.getBoundingClientRect();
+let bl62 = document.getElementById('bl6-2')
+bl62.getBoundingClientRect();
+let bl63 = document.getElementById('bl6-3')
+bl63.getBoundingClientRect();
+let bl64 = document.getElementById('bl6-4')
+bl64.getBoundingClientRect();
+let bl65 = document.getElementById('bl6-5')
+bl65.getBoundingClientRect();
+let bl66 = document.getElementById('bl6-6')
+bl66.getBoundingClientRect();
+let bl67 = document.getElementById('bl6-7')
+bl67.getBoundingClientRect();
+let bl68 = document.getElementById('bl6-8')
+bl68.getBoundingClientRect();
+let bl69 = document.getElementById('bl6-9')
+bl69.getBoundingClientRect();
+let bl71 = document.getElementById('bl7-1')
+bl71.getBoundingClientRect();
+let bl72 = document.getElementById('bl7-2')
+bl72.getBoundingClientRect();
+let bl73 = document.getElementById('bl7-3')
+bl73.getBoundingClientRect();
+let bl74 = document.getElementById('bl7-4')
+bl74.getBoundingClientRect();
+let bl75 = document.getElementById('bl7-5')
+bl75.getBoundingClientRect();
+let bl76 = document.getElementById('bl7-6')
+bl76.getBoundingClientRect();
+let bl77 = document.getElementById('bl7-7')
+bl77.getBoundingClientRect();
+let bl78 = document.getElementById('bl7-8')
+bl78.getBoundingClientRect();
+let bl79 = document.getElementById('bl7-9')
+bl79.getBoundingClientRect();
 
 // collision aware
 function checkCollision(ball, block) {
@@ -336,6 +372,62 @@ function collision () {
   if
     (checkCollision(ball, bl59))
     {bl59.remove(), winner(), change()}
+  
+    if
+    (checkCollision(ball, bl61))
+    {bl61.remove(), winner(), change()}
+  if
+    (checkCollision(ball, bl62))
+    {bl62.remove(), winner(), change()}
+  if
+    (checkCollision(ball, bl63))
+    {bl63.remove(), winner(), change()}
+  if
+    (checkCollision(ball, bl64))
+    {bl64.remove(), winner(), change()}
+  if
+    (checkCollision(ball, bl65))
+    {bl65.remove(), winner(), change()}
+  if
+    (checkCollision(ball, bl66))
+    {bl66.remove(), winner(), change()}
+  if
+    (checkCollision(ball, bl67))
+    {bl67.remove(), winner(), change()}
+  if
+    (checkCollision(ball, bl68))
+    {bl68.remove(), winner(), change()}
+  if
+    (checkCollision(ball, bl69))
+    {bl69.remove(), winner(), change()}
+
+    if
+    (checkCollision(ball, bl71))
+    {bl71.remove(), winner(), change()}
+  if
+    (checkCollision(ball, bl72))
+    {bl72.remove(), winner(), change()}
+  if
+    (checkCollision(ball, bl73))
+    {bl73.remove(), winner(), change()}
+  if
+    (checkCollision(ball, bl74))
+    {bl74.remove(), winner(), change()}
+  if
+    (checkCollision(ball, bl75))
+    {bl75.remove(), winner(), change()}
+  if
+    (checkCollision(ball, bl76))
+    {bl76.remove(), winner(), change()}
+  if
+    (checkCollision(ball, bl77))
+    {bl77.remove(), winner(), change()}
+  if
+    (checkCollision(ball, bl78))
+    {bl78.remove(), winner(), change()}
+  if
+    (checkCollision(ball, bl79))
+    {bl79.remove(), winner(), change()}
 }
 
 // Win conditions
