@@ -11,13 +11,15 @@ const paddleHeight = 15
 const boundsHeight = 640
 const boundsWidth = 540
 const ballDiameter = 15
-const blockHeight = 15
-const blockWidth = 50
+const blockHeight = 15 + 'px'
+const blockWidth = 50 + 'px'
 let timerId
-timerId = setInterval(moveBall, 10)
+timerId = setInterval(moveBall, 10000)
 const paddleStart = [235, 10]
 let currentPosition = paddleStart
 const ballStart = [265, 40]
+// for testing blocks
+// const ballStart = [420, 625]
 let ballPosition = ballStart
 
 // Key input
@@ -42,11 +44,6 @@ document.onkeydown = (e) => {
     console.log('right arrow pressed')
   }
 }
-
-
-// for testing the blocks
-// const block = document.getElementsByid('bl4')
-
 
 
 // For tests
@@ -91,19 +88,21 @@ board.appendChild(ball)
 function drawBall() {
   ball.style.left = ballPosition[0] + 'px'
   ball.style.bottom = ballPosition[1] + 'px'
+
+  console.log(ball.getBoundingClientRect())
 }
 
 //move ball
 function moveBall() {
     ballPosition[0] += x
     ballPosition[1] += y
+ball.getBoundingClientRect();
     drawBall()
     collision ()
     lose()
     // collisionBlock()
 
 }
-
 
 // Reverse Direction
 function change() {
@@ -123,6 +122,38 @@ function change() {
     x = 2
     return
   }
+}
+
+// for testing the blocks
+// const block = document.getElementsByid('bl4')
+let bl11 = document.getElementById('bl1-1')
+bl11.getBoundingClientRect();
+let bl12 = document.getElementById('bl1-2')
+bl12.getBoundingClientRect();
+let bl13 = document.getElementById('bl1-3')
+bl13.getBoundingClientRect();
+let bl14 = document.getElementById('bl1-4')
+bl14.getBoundingClientRect();
+let bl15 = document.getElementById('bl1-5')
+bl15.getBoundingClientRect();
+let bl16 = document.getElementById('bl1-6')
+bl16.getBoundingClientRect();
+let bl17 = document.getElementById('bl1-7')
+bl17.getBoundingClientRect();
+let bl18 = document.getElementById('bl1-8')
+bl18.getBoundingClientRect();
+let bl19 = document.getElementById('bl1-9')
+bl19.getBoundingClientRect();
+
+
+function checkCollision(elm1, elm2) {
+  var elm1Rect = elm1.getBoundingClientRect();
+  var elm2Rect = elm2.getBoundingClientRect();
+
+  return (elm1Rect.right >= elm2Rect.left &&
+      elm1Rect.left <= elm2Rect.right) &&
+    (elm1Rect.bottom >= elm2Rect.top &&
+      elm1Rect.top <= elm2Rect.bottom);
 }
 
 // wall and paddle interatctions
@@ -162,41 +193,105 @@ function collision () {
     // change()
     // }
     // if
-    //   ((ballPosition[1] > 530 && ballPosition[0] < 245 + blockWidth))
+    //   ((ballPosition[1] > 530))
     // {
     //   let rowFour = document.querySelector('.rowFour')
     // rowFour.removeChild(rowFour.children[0])
     //   change()
     // }
     if
-    ((ballPosition[0] > 510 && ballPosition[0] < 510 + blockWidth))
-    (ballPosition[1] > 195 && ballPosition[1] < 195 + blockHeight)
+    (
+      checkCollision(ball, bl11)
+    )
     {
-    let breakbl4 = document.getElementById('bl5-4')
-    breakbl4.remove()
+      bl11.remove()
     change()
     }
     if
-    ((ballPosition[1] > 510 && ballPosition[0] < 245 + blockWidth))
+    (
+      checkCollision(ball, bl12)
+    )
     {
-    let breakbl5 = document.getElementById('bl5-5')
-    breakbl5.remove()
+      bl12.remove()
     change()
     }
     if
-    ((ballPosition[1] > 510 && ballPosition[0] < 300 + blockWidth))
+    (
+      checkCollision(ball, bl13)
+    )
     {
-    let breakbl6 = document.getElementById('bl5-6')
-    breakbl6.remove()
+      bl13.remove()
     change()
     }
     if
-    ((ballPosition[1] >= 510 && 405 >= ballPosition[0] <= 355))
+    (
+      checkCollision(ball, bl14)
+    )
     {
-    let breakbl7 = document.getElementById('bl5-7')
-    breakbl7.remove()
+      bl14.remove()
     change()
     }
+    if
+    (
+      checkCollision(ball, bl15)
+    )
+    {
+      bl15.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl16)
+    )
+    {
+      bl16.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl17)
+    )
+    {
+      bl17.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl18)
+    )
+    {
+      bl18.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl19)
+    )
+    {
+      bl19.remove()
+    change()
+    }
+    // if
+    // ((ballPosition[1] > 510 && ballPosition[0] < 245 + blockWidth))
+    // {
+    // let breakbl5 = document.getElementById('bl5-5')
+    // breakbl5.remove()
+    // // change()
+    // }
+    // if
+    // ((ballPosition[1] > 510 && ballPosition[0] < 300 + blockWidth))
+    // {
+    // let breakbl6 = document.getElementById('bl5-6')
+    // breakbl6.remove()
+    // change()
+    // }
+    // if
+    // ((ballPosition[1] >= 510))
+    // {
+    // let breakbl7 = document.getElementById('bl5-7')
+    // breakbl7.remove()
+    // change()
+    // }
 }
 
 // Win conditions
@@ -211,7 +306,7 @@ function collision () {
 
 // Loss conditions
 function lose() {
-  if  (ballPosition[1] === -2) {
+  if  (ballPosition[1] < -2) {
 // alert('You lost, try again?')
 location.reload()
   }

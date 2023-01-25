@@ -90,229 +90,229 @@ border: 5px solid wheat
     margin: 1px;
 }
 
- .rowOne #bl1 {
+ .rowOne #bl1-1 {
     position: absolute;
-    top: 20px;
+    bottom: 600px;
     left: 25px;
 }
-.rowOne #bl2 {
+.rowOne #bl1-2 {
     position: absolute;
-    top: 20px;
+    bottom: 600px;
     left: 80px;
 }
-.rowOne #bl3 {
+.rowOne #bl1-3 {
     position: absolute;
-    top: 20px;
+    bottom: 600px;
     left: 135px;
 }
-.rowOne #bl4 {
+.rowOne #bl1-4 {
     position: absolute;
-    top: 20px;
+    bottom: 600px;
     left: 190px;
 }
-.rowOne #bl5 {
+.rowOne #bl1-5 {
     position: absolute;
-    top: 20px;
+    bottom: 600px;
     left: 245px;
 }
-.rowOne #bl6 {
+.rowOne #bl1-6 {
     position: absolute;
-    top: 20px;
+    bottom: 600px;
     left: 300px;
 }
-.rowOne #bl7 {
+.rowOne #bl1-7 {
     position: absolute;
-    top: 20px;
+    bottom: 600px;
     left: 355px;
 }
-.rowOne #bl8 {
+.rowOne #bl1-8 {
     position: absolute;
-    top: 20px;
+    bottom: 600px;
     left: 410px;
 }
-.rowOne #bl9 {
+.rowOne #bl1-9 {
     position: absolute;
-    top: 20px;
+    bottom: 600px;
     left: 465px;
 }
 .rowTwo #bl1{
     position: absolute;
-    top: 40px;
+    bottom: 580px;
     left: 25px;
 }
 .rowTwo #bl2{
     position: absolute;
-    top: 40px;
+    bottom: 580px;
     left: 80px;
 }
 .rowTwo #bl3{
     position: absolute;
-    top: 40px;
+    bottom: 580px;
     left: 135px;
 }
 .rowTwo #bl4{
     position: absolute;
-    top: 40px;
+    bottom: 580px;
     left: 190px;
 }
 .rowTwo #bl5{
     position: absolute;
-    top: 40px;
+     bottom: 580px;
     left: 245px;
 }
 .rowTwo #bl6{
     position: absolute;
-    top: 40px;
+     bottom: 580px;
     left: 300px;
 }
 .rowTwo #bl7{
     position: absolute;
-    top: 40px;
+     bottom: 580px;
     left: 355px;
 }
 .rowTwo #bl8{
     position: absolute;
-    top: 40px;
+     bottom: 580px;
     left: 410px;
 }
 .rowTwo #bl9{
     position: absolute;
-    top: 40px;
+     bottom: 580px;
     left: 465px;
 }
 .rowThree #bl1{
     position: absolute;
-    top: 60px;
+    bottom: 560px;
     left: 25px;
 }
 .rowThree #bl2{
     position: absolute;
-    top: 60px;
+     bottom: 560px;
     left: 80px;
 }
 .rowThree #bl3{
     position: absolute;
-    top: 60px;
+     bottom: 560px;
     left: 135px;
 }
 .rowThree #bl4{
     position: absolute;
-    top: 60px;
+     bottom: 560px;
     left: 190px;
 }
 .rowThree #bl5{
     position: absolute;
-    top: 60px;
+     bottom: 560px;
     left: 245px;
 }
 .rowThree #bl6{
     position: absolute;
-    top: 60px;
+     bottom: 560px;
     left: 300px;
 }
 .rowThree #bl7{
     position: absolute;
-    top: 60px;
+     bottom: 560px;
     left: 355px;
 }
 .rowThree #bl8{
     position: absolute;
-    top: 60px;
+     bottom: 560px;
     left: 410px;
 }
 .rowThree #bl9{
     position: absolute;
-    top: 60px;
+     bottom: 560px;
     left: 465px;
 }
 .rowFour #bl1{
     position: absolute;
-    top: 80px;
+    bottom: 540px;
     left: 25px;
 }
 .rowFour #bl2{
     position: absolute;
-    top: 80px;
+    bottom: 540px;
     left: 80px;
 }
 .rowFour #bl3{
     position: absolute;
-    top: 80px;
+    bottom: 540px;
     left: 135px;
 }
 .rowFour #bl4{
     position: absolute;
-    top: 80px;
+    bottom: 540px;
     left: 190px;
 }
 .rowFour #bl5{
     position: absolute;
-    top: 80px;
+    bottom: 540px;
     left: 245px;
 }
 .rowFour #bl6{
     position: absolute;
-    top: 80px;
+    bottom: 540px;
     left: 300px;
 }
 .rowFour #bl7{
     position: absolute;
-    top: 80px;
+    bottom: 540px;
     left: 355px;
 }
 .rowFour #bl8{
     position: absolute;
-    top: 80px;
+    bottom: 540px;
     left: 410px;
 }
 .rowFour #bl9{
     position: absolute;
-    top: 80px;
+    bottom: 540px;
     left: 465px;
 }
 .rowFive #bl5-1{
     position: absolute;
-    top: 100px;
+    bottom: 520px;
     left: 25px;
 }
 .rowFive #bl5-2{
     position: absolute;
-    top: 100px;
+    bottom: 520px;
     left: 80px;
 }
 .rowFive #bl5-3{
     position: absolute;
-    top: 100px;
+    bottom: 520px;
     left: 135px;
 }
 .rowFive #bl5-4{
     position: absolute;
-    top: 100px;
+    bottom: 520px;
     left: 190px;
 }
 .rowFive #bl5-5{
     position: absolute;
-    top: 100px;
+    bottom: 520px;
     left: 245px;
 }
 .rowFive #bl5-6{
     position: absolute;
-    top: 100px;
+    bottom: 520px;
     left: 300px;
 }
 .rowFive #bl5-7{
     position: absolute;
-    top: 100px;
+    bottom: 520px;
     left: 355px;
 }
 .rowFive #bl5-8{
     position: absolute;
-    top: 100px;
+    bottom: 520px;
     left: 410px;
 }
 .rowFive #bl5-9{
     position: absolute;
-    top: 100px;
+    bottom: 520px;
     left: 465px;
 }
 .x {
