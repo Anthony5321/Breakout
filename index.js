@@ -14,7 +14,7 @@ const ballDiameter = 15
 const blockHeight = 15
 const blockWidth = 50
 let timerId
-timerId = setInterval(moveBall, 100000)
+timerId = setInterval(moveBall, 10)
 const paddleStart = [235, 10]
 let currentPosition = paddleStart
 const ballStart = [265, 40]
@@ -30,8 +30,7 @@ document.onkeydown = (e) => {
     currentPosition[0] += 10
    }
     movePaddle()
-        console.log(currentPosition[0] > 0)
- 
+    console.log(currentPosition[0] > 0)
     console.log('left arrow pressed')
   } else if (e.key === 'ArrowRight') {
     currentPosition[0] += 10
@@ -43,6 +42,7 @@ document.onkeydown = (e) => {
     console.log('right arrow pressed')
   }
 }
+
 
 // for testing the blocks
 // const block = document.getElementsByid('bl4')
@@ -140,39 +140,61 @@ function collision () {
       change()
     }
     // Work around for the ball not hitting correctly
+    // if
+    // ((ballPosition[1] > 590 && ballPosition[0] < 245 + blockWidth))
+    // {
+    // let rowOne = document.querySelector('.rowOne')
+    // rowOne.removeChild(rowOne.children[0])
+    // change()
+    // }
+    // if
+    // ((ballPosition[1] > 570 && ballPosition[0] < 245 + blockWidth))
+    // {
+    // let rowTwo = document.querySelector('.rowTwo')
+    // rowTwo.removeChild(rowTwo.children[0])
+    // change()
+    // }
+    // if
+    // ((ballPosition[1] > 550 && ballPosition[0] < 245 + blockWidth))
+    // {
+    // let rowThree = document.querySelector('.rowThree')
+    // rowThree.removeChild(rowThree.children[0])
+    // change()
+    // }
+    // if
+    //   ((ballPosition[1] > 530 && ballPosition[0] < 245 + blockWidth))
+    // {
+    //   let rowFour = document.querySelector('.rowFour')
+    // rowFour.removeChild(rowFour.children[0])
+    //   change()
+    // }
     if
-    ((ballPosition[1] > 590 && ballPosition[0] >= blockWidth))
+    ((ballPosition[0] > 510 && ballPosition[0] < 510 + blockWidth))
+    (ballPosition[1] > 195 && ballPosition[1] < 195 + blockHeight)
     {
-    let rowOne = document.querySelector('.rowOne')
-    rowOne.removeChild(rowOne.children[0])
+    let breakbl4 = document.getElementById('bl5-4')
+    breakbl4.remove()
     change()
     }
     if
-    ((ballPosition[1] > 570 && ballPosition[0] >= blockWidth))
+    ((ballPosition[1] > 510 && ballPosition[0] < 245 + blockWidth))
     {
-    let rowTwo = document.querySelector('.rowTwo')
-    rowTwo.removeChild(rowTwo.children[0])
+    let breakbl5 = document.getElementById('bl5-5')
+    breakbl5.remove()
     change()
     }
     if
-    ((ballPosition[1] > 550 && ballPosition[0] >= blockWidth))
+    ((ballPosition[1] > 510 && ballPosition[0] < 300 + blockWidth))
     {
-    let rowThree = document.querySelector('.rowThree')
-    rowThree.removeChild(rowThree.children[0])
+    let breakbl6 = document.getElementById('bl5-6')
+    breakbl6.remove()
     change()
     }
     if
-      ((ballPosition[1] > 530 && ballPosition[0] >= blockWidth))
+    ((ballPosition[1] >= 510 && 405 >= ballPosition[0] <= 355))
     {
-      let rowFour = document.querySelector('.rowFour')
-    rowFour.removeChild(rowFour.children[0])
-      change()
-    }
-    if
-    ((ballPosition[1] > 510 && ballPosition[0] >= blockWidth))
-    {
-    let rowFive = document.querySelector('.rowFive')
-    rowFive.removeChild(rowFive.children[0])
+    let breakbl7 = document.getElementById('bl5-7')
+    breakbl7.remove()
     change()
     }
 }
