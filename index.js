@@ -11,15 +11,13 @@ const paddleHeight = 15
 const boundsHeight = 640
 const boundsWidth = 540
 const ballDiameter = 15
-const blockHeight = 15 + 'px'
-const blockWidth = 50 + 'px'
+const blockHeight = 15
+const blockWidth = 50
 let timerId
-timerId = setInterval(moveBall, 10000)
+timerId = setInterval(moveBall, 10)
 const paddleStart = [235, 10]
 let currentPosition = paddleStart
 const ballStart = [265, 40]
-// for testing blocks
-// const ballStart = [420, 625]
 let ballPosition = ballStart
 
 // Key input
@@ -144,19 +142,91 @@ let bl18 = document.getElementById('bl1-8')
 bl18.getBoundingClientRect();
 let bl19 = document.getElementById('bl1-9')
 bl19.getBoundingClientRect();
+let bl21 = document.getElementById('bl2-1')
+bl21.getBoundingClientRect();
+let bl22 = document.getElementById('bl2-2')
+bl22.getBoundingClientRect();
+let bl23 = document.getElementById('bl2-3')
+bl23.getBoundingClientRect();
+let bl24 = document.getElementById('bl2-4')
+bl24.getBoundingClientRect();
+let bl25 = document.getElementById('bl2-5')
+bl25.getBoundingClientRect();
+let bl26 = document.getElementById('bl2-6')
+bl26.getBoundingClientRect();
+let bl27 = document.getElementById('bl2-7')
+bl27.getBoundingClientRect();
+let bl28 = document.getElementById('bl2-8')
+bl28.getBoundingClientRect();
+let bl29 = document.getElementById('bl2-9')
+bl29.getBoundingClientRect();
+let bl31 = document.getElementById('bl3-1')
+bl31.getBoundingClientRect();
+let bl32 = document.getElementById('bl3-2')
+bl32.getBoundingClientRect();
+let bl33 = document.getElementById('bl3-3')
+bl33.getBoundingClientRect();
+let bl34 = document.getElementById('bl3-4')
+bl34.getBoundingClientRect();
+let bl35 = document.getElementById('bl3-5')
+bl35.getBoundingClientRect();
+let bl36 = document.getElementById('bl3-6')
+bl36.getBoundingClientRect();
+let bl37 = document.getElementById('bl3-7')
+bl37.getBoundingClientRect();
+let bl38 = document.getElementById('bl3-8')
+bl38.getBoundingClientRect();
+let bl39 = document.getElementById('bl3-9')
+bl39.getBoundingClientRect();
+let bl41 = document.getElementById('bl4-1')
+bl41.getBoundingClientRect();
+let bl42 = document.getElementById('bl4-2')
+bl42.getBoundingClientRect();
+let bl43 = document.getElementById('bl4-3')
+bl43.getBoundingClientRect();
+let bl44 = document.getElementById('bl4-4')
+bl44.getBoundingClientRect();
+let bl45 = document.getElementById('bl4-5')
+bl45.getBoundingClientRect();
+let bl46 = document.getElementById('bl4-6')
+bl46.getBoundingClientRect();
+let bl47 = document.getElementById('bl4-7')
+bl47.getBoundingClientRect();
+let bl48 = document.getElementById('bl4-8')
+bl48.getBoundingClientRect();
+let bl49 = document.getElementById('bl4-9')
+bl49.getBoundingClientRect();
+let bl51 = document.getElementById('bl5-1')
+bl51.getBoundingClientRect();
+let bl52 = document.getElementById('bl5-2')
+bl52.getBoundingClientRect();
+let bl53 = document.getElementById('bl5-3')
+bl53.getBoundingClientRect();
+let bl54 = document.getElementById('bl5-4')
+bl54.getBoundingClientRect();
+let bl55 = document.getElementById('bl5-5')
+bl55.getBoundingClientRect();
+let bl56 = document.getElementById('bl5-6')
+bl56.getBoundingClientRect();
+let bl57 = document.getElementById('bl5-7')
+bl57.getBoundingClientRect();
+let bl58 = document.getElementById('bl5-8')
+bl58.getBoundingClientRect();
+let bl59 = document.getElementById('bl5-9')
+bl59.getBoundingClientRect();
 
 
-function checkCollision(elm1, elm2) {
-  var elm1Rect = elm1.getBoundingClientRect();
-  var elm2Rect = elm2.getBoundingClientRect();
+function checkCollision(ball, block) {
+  var ballRect = ball.getBoundingClientRect();
+  var blockRect = block.getBoundingClientRect();
 
-  return (elm1Rect.right >= elm2Rect.left &&
-      elm1Rect.left <= elm2Rect.right) &&
-    (elm1Rect.bottom >= elm2Rect.top &&
-      elm1Rect.top <= elm2Rect.bottom);
+  return (ballRect.right >= blockRect.left &&
+      ballRect.left <= blockRect.right) &&
+    (ballRect.bottom >= ballRect.top &&
+      ballRect.top <= blockRect.bottom);
 }
 
-// wall and paddle interatctions
+// wall, block and paddle interactions
 function collision () {
     if(ballPosition[0] >= (boundsWidth - ballDiameter) || ballPosition[0] <= 0 || ballPosition[1] >= (boundsHeight - ballDiameter))
     {
@@ -170,35 +240,6 @@ function collision () {
     {
       change()
     }
-    // Work around for the ball not hitting correctly
-    // if
-    // ((ballPosition[1] > 590 && ballPosition[0] < 245 + blockWidth))
-    // {
-    // let rowOne = document.querySelector('.rowOne')
-    // rowOne.removeChild(rowOne.children[0])
-    // change()
-    // }
-    // if
-    // ((ballPosition[1] > 570 && ballPosition[0] < 245 + blockWidth))
-    // {
-    // let rowTwo = document.querySelector('.rowTwo')
-    // rowTwo.removeChild(rowTwo.children[0])
-    // change()
-    // }
-    // if
-    // ((ballPosition[1] > 550 && ballPosition[0] < 245 + blockWidth))
-    // {
-    // let rowThree = document.querySelector('.rowThree')
-    // rowThree.removeChild(rowThree.children[0])
-    // change()
-    // }
-    // if
-    //   ((ballPosition[1] > 530))
-    // {
-    //   let rowFour = document.querySelector('.rowFour')
-    // rowFour.removeChild(rowFour.children[0])
-    //   change()
-    // }
     if
     (
       checkCollision(ball, bl11)
@@ -271,27 +312,294 @@ function collision () {
       bl19.remove()
     change()
     }
-    // if
-    // ((ballPosition[1] > 510 && ballPosition[0] < 245 + blockWidth))
-    // {
-    // let breakbl5 = document.getElementById('bl5-5')
-    // breakbl5.remove()
-    // // change()
-    // }
-    // if
-    // ((ballPosition[1] > 510 && ballPosition[0] < 300 + blockWidth))
-    // {
-    // let breakbl6 = document.getElementById('bl5-6')
-    // breakbl6.remove()
-    // change()
-    // }
-    // if
-    // ((ballPosition[1] >= 510))
-    // {
-    // let breakbl7 = document.getElementById('bl5-7')
-    // breakbl7.remove()
-    // change()
-    // }
+    if
+    (
+      checkCollision(ball, bl21)
+    )
+    {
+      bl21.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl22)
+    )
+    {
+      bl22.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl23)
+    )
+    {
+      bl23.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl24)
+    )
+    {
+      bl24.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl25)
+    )
+    {
+      bl25.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl26)
+    )
+    {
+      bl26.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl27)
+    )
+    {
+      bl27.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl28)
+    )
+    {
+      bl28.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl29)
+    )
+    {
+      bl29.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl31)
+    )
+    {
+      bl31.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl32)
+    )
+    {
+      bl32.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl33)
+    )
+    {
+      bl33.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl34)
+    )
+    {
+      bl34.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl35)
+    )
+    {
+      bl35.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl36)
+    )
+    {
+      bl36.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl37)
+    )
+    {
+      bl37.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl38)
+    )
+    {
+      bl38.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl39)
+    )
+    {
+      bl39.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl41)
+    )
+    {
+      bl41.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl42)
+    )
+    {
+      bl42.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl43)
+    )
+    {
+      bl43.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl44)
+    )
+    {
+      bl44.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl45)
+    )
+    {
+      bl45.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl46)
+    )
+    {
+      bl46.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl47)
+    )
+    {
+      bl47.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl48)
+    )
+    {
+      bl48.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl49)
+    )
+    {
+      bl49.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl51)
+    )
+    {
+      bl51.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl52)
+    )
+    {
+      bl52.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl53)
+    )
+    {
+      bl53.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl54)
+    )
+    {
+      bl54.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl55)
+    )
+    {
+      bl55.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl56)
+    )
+    {
+      bl56.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl57)
+    )
+    {
+      bl57.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl58)
+    )
+    {
+      bl58.remove()
+    change()
+    }
+    if
+    (
+      checkCollision(ball, bl59)
+    )
+    {
+      bl59.remove()
+    change()
+    }
 }
 
 // Win conditions
@@ -311,11 +619,3 @@ function lose() {
 location.reload()
   }
 }
-
-// function collisionBlock() {
-// if (currentPosition[0], currentPosition[1] = block) 
-//       {  
-
-//         change()
-//       }}
-
