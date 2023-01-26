@@ -19,7 +19,7 @@ let y = -2
 let ballPosition = ballStart
 let currentPosition = paddleStart
 let timerId
-timerId = setInterval(moveBall, 10)
+timerId = setInterval(moveBall, 1000000)
 
 // Key input
 document.onkeydown = (e) => {

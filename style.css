@@ -33,6 +33,9 @@ aside {
     text-transform: uppercase;
 }
 main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #33ff33;
     font-family: 'Press Start 2P', cursive;
     background-color: #282828;
@@ -51,11 +54,22 @@ a {
     color: #33ff33;
 }
 .game {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/006/102/172/original/looping-matrix-style-cyrillic-alphabet-code-rain-effect-lightness-to-separate-from-the-background-free-video.jpg);
     background-color: #1d1c1c;
 }
 .home {
     position: absolute;
     top: 10%;
+    font-size: xx-large;
+    font-family: 'Press Start 2P', cursive;
+}
+.instructions {
+    position: absolute;
+    bottom: 20%;
+    font-size: x-large;
+    font-family: 'Press Start 2P', cursive;
+    color: #33ff33;
+    background-color: #1d1c1c;
 }
 .board {
 position: absolute;
