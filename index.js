@@ -23,9 +23,6 @@ let currentPosition = paddleStart
 let timerId
 timerId = setInterval(moveBall, 1000000000)
 
-
-
-
 // Key input
 document.onkeydown = (e) => {
   e = e || window.event;
@@ -581,7 +578,7 @@ function winner() {
 function newBall() {
   ballPosition[1] += 450
 }
-// number of lives
+// Number of lives
 function lives() {
   if  ((ballPosition[1] === -2) && (playerLives.children.length === 4)) {
       life1.remove()
