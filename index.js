@@ -19,7 +19,9 @@ let y = -2
 let ballPosition = ballStart
 let currentPosition = paddleStart
 let timerId
-timerId = setInterval(moveBall, 1000000)
+timerId = setInterval(moveBall, 1000000000)
+
+
 
 // Key input
 document.onkeydown = (e) => {
@@ -39,6 +41,9 @@ document.onkeydown = (e) => {
   }
 }
 
+function start() {
+  timerId = setInterval(moveBall, 8)
+}
 // Add paddle
 const paddle = document.createElement('div')
   paddle.classList.add('paddle')
@@ -239,193 +244,319 @@ function collision () {
     {change()}
   if
     (checkCollision(ball, bl11))
-    {bl11.remove(), winner(), change()}
+    {change()
+    bl11.remove(),
+    winner()}
   if
     (checkCollision(ball, bl12))
-    {bl12.remove(), winner(), change()}
+    {change()
+    bl12.remove()
+    winner()}
   if
     (checkCollision(ball, bl13))
-    {bl13.remove(), winner(), change()}
+    {change()
+    bl13.remove()
+    winner()}
   if
     (checkCollision(ball, bl14))
-    {bl14.remove(), winner(), change()}
+    {change(),
+    bl14.remove(),
+    winner()}
   if
     (checkCollision(ball, bl15))
-    {bl15.remove(), winner(), change()}
-  if
+    {change() 
+    bl15.remove()
+    winner()}
+    if
     (checkCollision(ball, bl16))
-    {bl16.remove(), winner(), change()}
-  if
+    {change() 
+    bl16.remove()
+    winner()}
+    if
     (checkCollision(ball, bl17))
-    {bl17.remove(), winner(), change()}
-  if
+    {change() 
+    bl17.remove()
+    winner()}
+    if
     (checkCollision(ball, bl18))
-    {bl18.remove(), winner(), change()}
-  if
+    {change() 
+    bl18.remove()
+    winner()}
+    if
     (checkCollision(ball, bl19))
-    {bl19.remove(), winner(), change()}
-  if
+    {change() 
+    bl19.remove()
+    winner()}
+    if
     (checkCollision(ball, bl21))
-    {bl21.remove(), winner(), change()}
-  if
+    {change() 
+    bl21.remove()
+    winner()}
+    if
     (checkCollision(ball, bl22))
-    {bl22.remove(), winner(), change()}
-  if
+    {change() 
+    bl22.remove()
+    winner()}
+    if
     (checkCollision(ball, bl23))
-    {bl23.remove(), winner(), change()}
-  if
+    {change() 
+    bl23.remove()
+    winner()}
+    if
     (checkCollision(ball, bl24))
-    {bl24.remove(), winner(), change()}
-  if
+    {change() 
+    bl24.remove()
+    winner()}
+    if
     (checkCollision(ball, bl25))
-    {bl25.remove(), winner(), change()}
-  if
+    {change() 
+    bl25.remove()
+    winner()}
+    if
     (checkCollision(ball, bl26))
-    {bl26.remove(), winner(), change()}
-  if
+    {change() 
+    bl26.remove()
+    winner()}
+    if
     (checkCollision(ball, bl27))
-    {bl27.remove(), winner(), change()}
-  if
+    {change() 
+    bl27.remove()
+    winner()}
+    if
     (checkCollision(ball, bl28))
-    {bl28.remove(), winner(), change()}
-  if
+    {change() 
+    bl28.remove()
+    winner()}
+    if
     (checkCollision(ball, bl29))
-    {bl29.remove(), winner(), change()}
-  if
+    {change() 
+    bl29.remove()
+    winner()}
+    if
     (checkCollision(ball, bl31))
-    {bl31.remove(), winner(), change()}
-  if
+    {change() 
+    bl31.remove()
+    winner()}
+    if
     (checkCollision(ball, bl32))
-    {bl32.remove(), winner(), change()}
-  if
+    {change() 
+    bl32.remove()
+    winner()}
+    if
     (checkCollision(ball, bl33))
-    {bl33.remove(), winner(), change()}
-  if
+    {change() 
+    bl33.remove()
+    winner()}
+    if
     (checkCollision(ball, bl34))
-    {bl34.remove(), winner(), change()}
-  if
+    {change() 
+    bl34.remove()
+    winner()}
+    if
     (checkCollision(ball, bl35))
-    {bl35.remove(), winner(), change()}
-  if
+    {change() 
+    bl35.remove()
+    winner()}
+    if
     (checkCollision(ball, bl36))
-    {bl36.remove(), winner(), change()}
-  if
+    {change() 
+    bl36.remove()
+    winner()}
+    if
     (checkCollision(ball, bl37))
-    {bl37.remove(), winner(), change()}
-  if
+    {change() 
+    bl37.remove()
+    winner()}
+    if
     (checkCollision(ball, bl38))
-    {bl38.remove(), winner(), change()}
-  if
+    {change() 
+    bl38.remove()
+    winner()}
+    if
     (checkCollision(ball, bl39))
-    {bl39.remove(), winner(), change()}
-  if
+    {change() 
+    bl39.remove()
+    winner()}
+    if
     (checkCollision(ball, bl41))
-    {bl41.remove(), winner(), change()}
-  if
+    {change() 
+    bl41.remove()
+    winner()}
+    if
     (checkCollision(ball, bl42))
-    {bl42.remove(), winner(), change()}
-  if
+    {change() 
+    bl42.remove()
+    winner()}
+    if
     (checkCollision(ball, bl43))
-    {bl43.remove(), winner(), change()}
-  if
+    {change() 
+    bl43.remove()
+    winner()}
+    if
     (checkCollision(ball, bl44))
-    {bl44.remove(), winner(), change()}
-  if
+    {change() 
+    bl44.remove()
+    winner()}
+    if
     (checkCollision(ball, bl45))
-    {bl45.remove(), winner(), change()}
-  if
+    {change() 
+    bl45.remove()
+    winner()}
+    if
     (checkCollision(ball, bl46))
-    {bl46.remove(), winner(), change()}
-  if
+    {change() 
+    bl46.remove()
+    winner()}
+    if
     (checkCollision(ball, bl47))
-    {bl47.remove(), winner(), change()}
-  if
+    {change() 
+    bl47.remove()
+    winner()}
+    if
     (checkCollision(ball, bl48))
-    {bl48.remove(), winner(), change()}
-  if
+    {change() 
+    bl48.remove()
+    winner()}
+    if
     (checkCollision(ball, bl49))
-    {bl49.remove(), winner(), change()}
-  if
+    {change() 
+    bl49.remove()
+    winner()}
+    if
     (checkCollision(ball, bl51))
-    {bl51.remove(), winner(), change()}
-  if
+    {change() 
+    bl51.remove()
+    winner()}
+    if
     (checkCollision(ball, bl52))
-    {bl52.remove(), winner(), change()}
-  if
+    {change() 
+    bl52.remove()
+    winner()}
+    if
     (checkCollision(ball, bl53))
-    {bl53.remove(), winner(), change()}
-  if
+    {change() 
+    bl53.remove()
+    winner()}
+    if
     (checkCollision(ball, bl54))
-    {bl54.remove(), winner(), change()}
-  if
+    {change() 
+    bl54.remove()
+    winner()}
+    if
     (checkCollision(ball, bl55))
-    {bl55.remove(), winner(), change()}
-  if
+    {change() 
+    bl55.remove()
+    winner()}
+    if
     (checkCollision(ball, bl56))
-    {bl56.remove(), winner(), change()}
-  if
+    {change() 
+    bl56.remove()
+    winner()}
+    if
     (checkCollision(ball, bl57))
-    {bl57.remove(), winner(), change()}
-  if
+    {change() 
+    bl57.remove()
+    winner()}
+    if
     (checkCollision(ball, bl58))
-    {bl58.remove(), winner(), change()}
-  if
+    {change() 
+    bl58.remove()
+    winner()}
+    if
     (checkCollision(ball, bl59))
-    {bl59.remove(), winner(), change()}
-  if
+    {change() 
+    bl59.remove()
+    winner()}
+    if
     (checkCollision(ball, bl61))
-    {bl61.remove(), winner(), change()}
-  if
+    {change() 
+    bl61.remove()
+    winner()}
+    if
     (checkCollision(ball, bl62))
-    {bl62.remove(), winner(), change()}
-  if
+    {change() 
+    bl62.remove()
+    winner()}
+    if
     (checkCollision(ball, bl63))
-    {bl63.remove(), winner(), change()}
-  if
+    {change() 
+    bl63.remove()
+    winner()}
+    if
     (checkCollision(ball, bl64))
-    {bl64.remove(), winner(), change()}
-  if
+    {change() 
+    bl64.remove()
+    winner()}
+    if
     (checkCollision(ball, bl65))
-    {bl65.remove(), winner(), change()}
-  if
+    {change() 
+    bl65.remove()
+    winner()}
+    if
     (checkCollision(ball, bl66))
-    {bl66.remove(), winner(), change()}
-  if
+    {change() 
+    bl66.remove()
+    winner()}
+    if
     (checkCollision(ball, bl67))
-    {bl67.remove(), winner(), change()}
-  if
+    {change() 
+    bl67.remove()
+    winner()}
+    if
     (checkCollision(ball, bl68))
-    {bl68.remove(), winner(), change()}
-  if
+    {change() 
+    bl68.remove()
+    winner()}
+    if
     (checkCollision(ball, bl69))
-    {bl69.remove(), winner(), change()}
-  if
+    {change() 
+    bl69.remove()
+    winner()}
+    if
     (checkCollision(ball, bl71))
-    {bl71.remove(), winner(), change()}
-  if
+    {change() 
+    bl71.remove()
+    winner()}
+    if
     (checkCollision(ball, bl72))
-    {bl72.remove(), winner(), change()}
-  if
+    {change() 
+    bl72.remove()
+    winner()}
+    if
     (checkCollision(ball, bl73))
-    {bl73.remove(), winner(), change()}
-  if
+    {change() 
+    bl73.remove()
+    winner()}
+    if
     (checkCollision(ball, bl74))
-    {bl74.remove(), winner(), change()}
-  if
+    {change() 
+    bl74.remove()
+    winner()}
+    if
     (checkCollision(ball, bl75))
-    {bl75.remove(), winner(), change()}
-  if
+    {change() 
+    bl75.remove()
+    winner()}
+    if
     (checkCollision(ball, bl76))
-    {bl76.remove(), winner(), change()}
-  if
+    {change() 
+    bl76.remove()
+    winner()}
+    if
     (checkCollision(ball, bl77))
-    {bl77.remove(), winner(), change()}
-  if
+    {change() 
+    bl77.remove()
+    winner()}
+    if
     (checkCollision(ball, bl78))
-    {bl78.remove(), winner(), change()}
-  if
+    {change() 
+    bl78.remove()
+    winner()}
+    if
     (checkCollision(ball, bl79))
-    {bl79.remove(), winner(), change()}
+    {change() 
+    bl79.remove()
+    winner()}
 }
 
 // Win conditions
