@@ -28,9 +28,9 @@
 ### ***Screenshots***
 
 ##### In progress
-![First pic](https://imgur.com/1XVU4UD)
+![Imgur](https://i.imgur.com/4d83ImU.png)
 ##### Finished progress
-![I learned](https://www.zdnet.com/a/img/resize/459a0ab08730871cd9ebe8f9a13f6569103ba4f6/2022/08/17/ed15e891-93dd-4cfe-bb63-1c596e025d6d/sharing.jpg?auto=webp&width=1280)
+![Imgur](https://i.imgur.com/CgOZ6bx.png)
 ***
 
 ### ***Future Updates***

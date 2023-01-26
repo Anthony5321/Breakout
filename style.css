@@ -105,6 +105,33 @@ button:hover {
     width: 15px;
     background-color: #33ff33;
 }
+.life1 {
+    left:107%;
+    top: 102%;
+    position: relative;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: #33ff33;
+}
+.life2 {
+    left:107%;
+    top: 94%;
+    position: relative;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: #33ff33;
+}
+.life3 {
+    left:107%;
+    top: 86%;
+    position: relative;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: #33ff33;
+}
 .block {
     position: absolute;
     height: 15px;

@@ -12,6 +12,9 @@ const blockWidth = 50
 const paddleStart = [235, 10]
 const ballStart = [265, 40]
 const rowOne = document.querySelector('.rowOne')
+const life1 = document.querySelector('.life1')
+const life2 = document.querySelector('.life2')
+const life3 = document.querySelector('.life3')
 let rightPressed = false;
 let leftPressed = false;
 let x = 2
@@ -20,6 +23,7 @@ let ballPosition = ballStart
 let currentPosition = paddleStart
 let timerId
 timerId = setInterval(moveBall, 1000000000)
+
 
 
 
@@ -574,10 +578,17 @@ function winner() {
     }
 }
 
-// Loss conditions
-function lose() {
+// number of lives
+function lives() {
   if  (ballPosition[1] === -2) {
-  alert('You lost, try again?')
-  location.reload()
+
   }
 }
+
+// Loss conditions
+// function lose() {
+//   if  (ballPosition[1] === -2) {
+//   alert('You lost, try again?')
+//   location.reload()
+//   }
+// }
