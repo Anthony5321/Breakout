@@ -7,8 +7,6 @@ const paddleHeight = 15
 const boundsHeight = 640
 const boundsWidth = 540
 const ballDiameter = 15
-const blockHeight = 15
-const blockWidth = 50
 const paddleStart = [235, 10]
 const ballStart = [265, 40]
 const rowOne = document.querySelector('.rowOne')
@@ -239,7 +237,6 @@ function checkCollision(ball, block) {
     (ballRect.bottom >= ballRect.top &&
     ballRect.top <= blockRect.bottom);
 }
-
 // wall, block and paddle interactions
 function collision () {
   if(ballPosition[0] >= (boundsWidth - ballDiameter) || ballPosition[0] <= 0 || ballPosition[1] >= (boundsHeight - ballDiameter))
@@ -596,7 +593,6 @@ function lives() {
       life3.remove()
       newBall()}
 }
-// setTimeout(lives, 200, life3)
 
 // Loss conditions
 function lose() {

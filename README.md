@@ -35,7 +35,7 @@
 
 ### ***Future Updates***
 
-- [ ] Add lives
+- [x] Add lives
 - [ ] block roll down
 - [ ] Let the paddle grow with some blocks
 - [ ] slow time down with blocks
