@@ -42,7 +42,7 @@ document.onkeydown = (e) => {
 }
 
 function start() {
-  timerId = setInterval(moveBall, 9)
+  timerId = setInterval(moveBall, 8)
 }
 // Add paddle
 const paddle = document.createElement('div')
