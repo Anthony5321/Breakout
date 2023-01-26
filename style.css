@@ -105,7 +105,21 @@ button:hover {
     width: 15px;
     background-color: #33ff33;
 }
-.life1 {
+p {
+    position: relative;
+    font-size: small;
+    font-family: 'Press Start 2P', cursive;
+    color: #33ff33;
+    left:106%;
+    top: 70%;
+    width: 20px;
+}
+.lives {
+    position: relative;
+    left:0%;
+    top: 95%;
+}
+#life1 {
     left:107%;
     top: 102%;
     position: relative;
@@ -114,7 +128,7 @@ button:hover {
     width: 15px;
     background-color: #33ff33;
 }
-.life2 {
+#life2 {
     left:107%;
     top: 94%;
     position: relative;
@@ -123,7 +137,7 @@ button:hover {
     width: 15px;
     background-color: #33ff33;
 }
-.life3 {
+#life3 {
     left:107%;
     top: 86%;
     position: relative;

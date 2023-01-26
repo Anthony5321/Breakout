@@ -12,9 +12,10 @@ const blockWidth = 50
 const paddleStart = [235, 10]
 const ballStart = [265, 40]
 const rowOne = document.querySelector('.rowOne')
-const life1 = document.querySelector('.life1')
-const life2 = document.querySelector('.life2')
-const life3 = document.querySelector('.life3')
+const playerLives = document.querySelector('.lives')
+const life1 = document.querySelector('#life1')
+const life2 = document.querySelector('#life2')
+const life3 = document.querySelector('#life3')
 let rightPressed = false;
 let leftPressed = false;
 let x = 2
@@ -46,7 +47,7 @@ document.onkeydown = (e) => {
 }
 
 function start() {
-  timerId = setInterval(moveBall, 8)
+  timerId = setInterval(moveBall, 9)
 }
 // Add paddle
 const paddle = document.createElement('div')
@@ -76,7 +77,8 @@ function moveBall() {
     ballPosition[1] += y
     ball.getBoundingClientRect();
     drawBall()
-    collision ()
+    collision()
+    lives()
     lose()
 }
 
@@ -578,17 +580,29 @@ function winner() {
     }
 }
 
+// Life ball
+function newBall() {
+  ballPosition[1] += 450
+}
 // number of lives
 function lives() {
-  if  (ballPosition[1] === -2) {
-
-  }
+  if  ((ballPosition[1] === -2) && (playerLives.children.length === 4)) {
+      life1.remove()
+      newBall()}
+  else if  ((ballPosition[1]=== -4) && (playerLives.children.length === 3)){
+      life2.remove()
+      newBall()}
+  else if ((ballPosition[1] === -6) && (playerLives.children.length === 2)){
+      life3.remove()
+      newBall()}
 }
+// setTimeout(lives, 200, life3)
 
 // Loss conditions
-// function lose() {
-//   if  (ballPosition[1] === -2) {
-//   alert('You lost, try again?')
-//   location.reload()
-//   }
-// }
+function lose() {
+  if  (
+    ballPosition[1] === -8 && (playerLives.children.length === 1)) {
+  alert('You lost, try again?')
+  location.reload()
+  }
+}
