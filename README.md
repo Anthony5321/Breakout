@@ -52,4 +52,5 @@
 ##### Helpful hands: [google](https://einzelganger.co/wp-content/uploads/2022/05/shutterstock_686442394-scaled.jpg)
 ##### Matrix look alike: [google](https://static.vecteezy.com/system/resources/thumbnails/006/102/172/original/looping-matrix-style-cyrillic-alphabet-code-rain-effect-lightness-to-separate-from-the-background-free-video.jpg)
 
+##### Icon used: [istock]("https://cdn5.vectorstock.com/i/1000x1000/44/54/retro-computer-from-90s-vector-20484454.jpg")
 ***

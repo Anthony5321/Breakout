@@ -81,7 +81,7 @@ a:hover {
     font-size: x-large;
     font-family: 'Press Start 2P', cursive;
     color: white;
-    background-color: #1d1c1c;
+
 }
 .board {
 position: absolute;
@@ -98,7 +98,7 @@ button {
     font-size: x-large;
     font-family: 'Press Start 2P', cursive;
     color: white;
-    background-color: #1d1c1c;
+    background-color: black;
 }
 button:hover {
     animation: shake 0.5s infinite;
