@@ -69,6 +69,7 @@ a:hover {
     background-color: #1d1c1c;
 }
 .home {
+    color: white;
     position: absolute;
     top: 10%;
     font-size: xx-large;
@@ -79,7 +80,7 @@ a:hover {
     bottom: 20%;
     font-size: x-large;
     font-family: 'Press Start 2P', cursive;
-    color: #33ff33;
+    color: white;
     background-color: #1d1c1c;
 }
 .board {
@@ -96,7 +97,7 @@ button {
     bottom: 15%;
     font-size: x-large;
     font-family: 'Press Start 2P', cursive;
-    color: #33ff33;
+    color: white;
     background-color: #1d1c1c;
 }
 button:hover {
@@ -115,13 +116,14 @@ p {
     position: relative;
     font-size: medium;
     font-family: 'Press Start 2P', cursive;
-    color: #33ff33;
+    color: white;
     left:106%;
     top: 70%;
     width: 80px;
     
 }
 .lives {
+
     position: relative;
     left:0%;
     top: 95%;
@@ -133,7 +135,7 @@ p {
     border-radius: 50%;
     height: 15px;
     width: 15px;
-    background-color: #33ff33;
+    background-color: white;
 }
 #life2 {
     left:107%;
@@ -142,7 +144,7 @@ p {
     border-radius: 50%;
     height: 15px;
     width: 15px;
-    background-color: #33ff33;
+    background-color: white;
 }
 #life3 {
     left:107%;
@@ -151,7 +153,7 @@ p {
     border-radius: 50%;
     height: 15px;
     width: 15px;
-    background-color: #33ff33;
+    background-color: white;
 }
 .block {
     position: absolute;
