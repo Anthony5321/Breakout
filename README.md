@@ -22,7 +22,7 @@
 
 ##### Things I learned along the way, is that a moving object is one of the most ambitious things for me to learn thus far.
 ##### A Trello board was used to keep track of development progress and can be viewed [here](https://trello.com/b/o2MMb8xa/project-1).
-##### The project itself was deployed and can be viewed [here](old-new-breakout.surge.sh).
+##### The project itself was deployed and can be viewed [here](http://old-new-breakout.surge.sh/).
 ***
 
 ### ***Screenshots***
